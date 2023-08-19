@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Projeto para praticar a tag tabela no curso da devmedia com assinatura proporcionada pelo potência tech powered ifood">
+    <meta name="keywords" content="HTML,CSS,JavaScript,devmedia,ifood,potência tech powered, tabela">
+    <meta name="author" content="Guadalupe Monteiro">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="assets/icone-foguete.png">
+    <link rel="stylesheet" href="css/global.css?v=1">
+    <link rel="stylesheet" href="css/index.css?v=1">
+    <title>Alphatec</title>
+</head>
+
+<body>
+    <header>
+        <nav id="nav">
+            <div class="logo">
+                <a href="index.html" aria-label="Logo que direciona para página home"><img src="assets/logo-icone.png"
+                        alt="logo da Alfatech"></a>
+                <div class="text">
+                    <h1>AlfaTech</h1>
+                    <p>Soluções em hospedagem</p>
+                </div>
+            </div>
+            <button id="btn-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-list">
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+            </button>
+            <ul id="menu-list" role="menu">
+                <li><a href="#services" aria-label="Ir para seção informações">INFORMAÇÕES</a></li>
+                <li><a href="#plans" aria-label="Ir para seção planos">PLANOS</a></li>
+                <li><a href="pricetable.html" aria-label="Ir para seção preços">PREÇOS</a></li>
+                <li><a href="#contact" aria-label="Ir para seção contato">CONTATO</a></li>
+            </ul>
+        </nav>
+        <div class="banner-container flex">
+            <div class="text-wrapper">
+                <p>Simples - Fácil de usar - 10x mais rápido</p>
+                <h2>O melhor serviço de hospedagem na web para o seu site.</h2>
+                <p>Obtenha a melhor velocidade para o seu site. Não perca mais clientes por causa de lentidão na sua
+                    hospedagem.</p>
+            </div>
+            <div class="img-banner">
+                <img src="assets/imagem-banner.png" alt="Ilustração de servidor">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="call-to-action flex">
+            <div>
+                <p>Hospede o seu site por apenas R$29 por mês.</p>
+                <p>Também temos planos gratuitos. Adquira já o seu.</p>
+            </div>
+            <div>
+                <a class="flex" href="pricetable.html" aria-label="Ir para tabela de preços">TABELA DE PREÇOS</a>
+            </div>
+        </div>
+        <section class="services flex" id="services">
+            <h2>Existem diversos serviços de hospedagem de sites. Porque você deve <span>nos escolher?</span></h2>
+            <div class="boxes-container flex">
+                <div class="flex box">
+                    <img src="assets/icone-engrenagens.png" alt="ícone engrenagens">
+                    <div class="services-text">
+                        <p>Fácil de configurar</p>
+                        <p>Facilmente configurável em plataformas CMS populares - Wordpress, Joomia ...</p>
+                    </div>
+                </div>
+                <div class="flex box">
+                    <img src="assets/cloud-icone.png" alt="ícone nuvem">
+                    <div class="services-text">
+                        <p>Servidores 100% Online</p>
+                        <p>Serviços que operam 100% do tempo para manter o seu site online...</p>
+                    </div>
+                </div>
+                <div class="flex box">
+                    <img src="assets/icone-suporte.png" alt="ícone suporte">
+                    <div class="services-text">
+                        <p>Suporte 24/7</p>
+                        <p>Suporte altamente treinado e especializado em soluções de Cloud...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="table-container flex" id="plans">
+            <p class="table-text">Pague <span>somente</span> pelo que for usar. Sem cobranças adicionais!</p>
+            <table>
+                <caption>Tabela de planos</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <h2>PESSOAL</h2>
+                            <img src="assets/pessoal-icone.png" alt="ícone de pessoa">
+                            <p>Indicado para uso pessoal</p>
+                        </th>
+                        <th scope="col">
+                            <h2>PROFISSIONAL</h2>
+                            <img src="assets/equipe-icone.png" alt="ícone com grupo de pessoas">
+                            <p>Indicado para profissionais de T.I</p>
+                        </th>
+                        <th scope="col">
+                            <h2>EMPRESARIAL</h2>
+                            <img src="assets/empresa-icone.png" alt="ícone de empresa">
+                            <p>Indicado para empresas</p>
+                        </th>
+                        <th scope="col">
+                            <h2>BIG TECHS</h2>
+                            <img src="assets/big-tech.png" alt="ícone de globo terrestre">
+                            <p>Indicado para grandes empresas</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="PESSOAL">1 usuário</td>
+                        <td data-label="PROFISSIONAL">10 usuários</td>
+                        <td data-label="EMPRESARIAL">25 usuários</td>
+                        <td data-label="BIG TECHS">50 usuários</td>
+                    </tr>
+                    <tr>
+                        <td data-label="PESSOAL">1 domínio grátis</td>
+                        <td data-label="PROFISSIONAL">2 domínio grátis</td>
+                        <td data-label="EMPRESARIAL">2 domínio grátis</td>
+                        <td data-label="BIG TECHS">3 domínio grátis</td>
+                    </tr>
+                    <tr>
+                        <td data-label="PESSOAL">200GB SSD espaço</td>
+                        <td data-label="PROFISSIONAL">500GB SSD espaço</td>
+                        <td data-label="EMPRESARIAL">1TB SSD espaço</td>
+                        <td data-label="BIG TECHS">2TB SSD espaço</td>
+                    </tr>
+                    <tr>
+                        <td data-label="PESSOAL">Ofertas especiais</td>
+                        <td data-label="PROFISSIONAL">Ofertas especiais</td>
+                        <td data-label="EMPRESARIAL">Ofertas especiais</td>
+                        <td data-label="BIG TECHS">Ofertas especiais</td>
+                    </tr>
+                    <tr>
+                        <td data-label="PESSOAL">Suporte limitado</td>
+                        <td data-label="PROFISSIONAL">Suporte ilimitado</td>
+                        <td data-label="EMPRESARIAL">Suporte ilimitado</td>
+                        <td data-label="BIG TECHS">Suporte ilimitado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <div class="call-to-action call-to-action-blue flex">
+            <div>
+                <p>Mais de 20.000 pessoas confiam na Alphatec!</p>
+                <p>Seja um deles você também!</p>
+            </div>
+            <div>
+                <a class="flex" href="pricetable.html" aria-label="Ir para tabela de preços">TABELA DE PREÇOS</a>
+            </div>
+        </div>
+    </main>
+    <footer class="flex" id="contact">
+        <div class="contact-container">
+            <div class="flex logo-wrapper">
+                <div>
+                    <img src="assets/logo-icone.png" alt="logo da Alfatech">
+                </div>
+                <div class="text">
+                    <h2>AlfaTech</h2>
+                    <p>Soluções em hospedagem</p>
+                </div>
+            </div>
+            <address>
+                <p>Telefone & Whatsapp: <a href="tel:21999995555">(21) 99999-5555</a></p>
+                <p>E-mail: <a href="mailto:suporte@alfatech.com">suporte@alfatech.com</a></p>
+                <p>Endereço: Av Ayrton Senna, 3000 - Barra da Tijuca - Rio de Janeiro</p>
+                <p>&copy; Alphatec - Soluções em hospedagem - Todos os direitos reservados</p>
+            </address>
+        </div>
+        <div class="author flex">
+            <p>Desenvolvido por<a href="https://github.com/GuadalupeMonteiro" target="_blank">Guadalupe Monteiro</a></p>
+        </div>
+    </footer>
+    <script src="js/global.js"></script>
+</body>
+
+</html>

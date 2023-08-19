@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Projeto para praticar a tag tabela no curso da devmedia com assinatura proporcionada pelo potência tech powered ifood">
+    <meta name="keywords" content="HTML,CSS,JavaScript,devmedia,ifood,potência tech powered, tabela">
+    <meta name="author" content="Guadalupe Monteiro">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="assets/icone-foguete.png">
+    <link rel="stylesheet" href="css/global.css?v=1">
+    <link rel="stylesheet" href="css/pricetable.css?v=1">
+    <title>Preços</title>
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="logo">
+            <a href="index.html" aria-label="Ir para página home"><img src="assets/logo-icone-escuro.png"
+                    alt="logo da Alfatech"></a>
+            <div class="text">
+                <h1>AlfaTech</h1>
+                <p>Soluções em hospedagem</p>
+            </div>
+        </div>
+        <button id="btn-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-list">
+            <span class="menu-icon"></span>
+            <span class="menu-icon"></span>
+            <span class="menu-icon"></span>
+        </button>
+        <ul id="menu-list" role="menu">
+            <li><a href="#">INFORMAÇÕES</a></li>
+            <li><a href="#">PLANOS</a></li>
+            <li><a href="pricetable.html" aria-label="Ir para página preços">PREÇOS</a></li>
+            <li><a href="#">CONTATO</a></li>
+        </ul>
+    </nav>
+    <main class="flex">
+        <table>
+            <caption>Tabela de preços</caption>
+            <thead class="thead">
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">
+                        <p>PESSOAL</p>
+                        <h2>GRÁTIS</h2>
+                    </th>
+                    <th scope="col">
+                        <p>PROFISSIONAL</p>
+                        <h2>R$29</h2>
+                    </th>
+                    <th scope="col">
+                        <p>EMPRESARIAL</p>
+                        <h2>R$59</h2>
+                    </th>
+                    <th scope="col">
+                        <p>BIG TECHS</p>
+                        <h2>R$99</h2>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="item" scope="row">MONITORAMENTO DE REDE</th>
+                    <td data-label="PESSOAL">3 REDES</td>
+                    <td data-label="PROFISSIONAL">10 REDES</td>
+                    <td data-label="EMPRESARIAL">20 REDES</td>
+                    <td data-label="BIG TECHS">50 REDES</td>
+                </tr>
+                <tr>
+                    <th class="item white-item" scope="row">DASHBOARD</th>
+                    <td data-label="PESSOAL">1 DASHBOARD</td>
+                    <td data-label="PROFISSIONAL">5 DASHBOARD</td>
+                    <td data-label="EMPRESARIAL">10 DASHBOARD</td>
+                    <td data-label="BIG TECHS">25 DASHBOARD</td>
+                </tr>
+                <tr>
+                    <th class="item" scope="row">USUÁRIOS</th>
+                    <td data-label="PESSOAL">1 USUÁRIOS</td>
+                    <td data-label="PROFISSIONAL">5 USUÁRIOS</td>
+                    <td data-label="EMPRESARIAL">10 USUÁRIOS</td>
+                    <td data-label="BIG TECHS">25 USUÁRIOS</td>
+                </tr>
+                <tr>
+                    <th class="item white-item" scope="row">RELATÓRIO DE ATUALIZAÇÃO</th>
+                    <td data-label="PESSOAL">TODA HORA</td>
+                    <td data-label="PROFISSIONAL">A CADA 30 MINUTOS</td>
+                    <td data-label="EMPRESARIAL">QUASE EM TEMPO REAL</td>
+                    <td data-label="BIG TECHS">TEMPO REAL</td>
+                </tr>
+                <tr>
+                    <th class="item" scope="row">RELATÓRIO DE EMAILS</th>
+                    <td data-label="PESSOAL" aria-label="incluso no plano pessoal"><span></span></td>
+                    <td data-label="PROFISSIONAL" aria-label="incluso no plano profissonal"><span></span></td>
+                    <td data-label="EMPRESARIAL" aria-label="incluso no plano empresarial"><span></span></td>
+                    <td data-label="BIG TECHS" aria-label="incluso no plano big techs"><span></span></td>
+                </tr>
+                <tr>
+                    <th class="item white-item" scope="row">TRANSAÇÃO ILIMITADAS</th>
+                    <td data-label="PESSOAL" aria-label="incluso no plano pessoal"><span></span></td>
+                    <td data-label="PROFISSIONAL" aria-label="incluso no plano profissonal"><span></span></td>
+                    <td data-label="EMPRESARIAL" aria-label="incluso no plano empresarial"><span></span></td>
+                    <td data-label="BIG TECHS" aria-label="incluso no plano big techs"><span></span></td>
+                </tr>
+                <tr>
+                    <th class="item" scope="row">RASTREADOR DE PAGAMENTO</th>
+                    <td data-label="PESSOAL" aria-label="incluso no plano pessoal"><span></span></td>
+                    <td data-label="PROFISSIONAL" aria-label="incluso no plano profissonal"><span></span></td>
+                    <td data-label="EMPRESARIAL" aria-label="incluso no plano empresarial"><span></span></td>
+                    <td data-label="BIG TECHS" aria-label="incluso no plano big techs"><span></span></td>
+                </tr>
+                <tr>
+                    <th class="item white-item" scope="row">EXPORTAÇÃO DE DADOS</th>
+                    <td data-label="PESSOAL" aria-label="incluso no plano pessoal"><span></span></td>
+                    <td data-label="PROFISSIONAL" aria-label="incluso no plano profissonal"><span></span></td>
+                    <td data-label="EMPRESARIAL" aria-label="incluso no plano empresarial"><span></span></td>
+                    <td data-label="BIG TECHS" aria-label="incluso no plano big techs"><span></span></td>
+                </tr>
+                <tr>
+                    <th class="item" scope="row">CONVERSOR DE MOEDA</th>
+                    <td data-label="PESSOAL"></td>
+                    <td data-label="PROFISSIONAL" aria-label="incluso no plano profissonal"><span></span></td>
+                    <td data-label="EMPRESARIAL" aria-label="incluso no plano empresarial"><span></span></td>
+                    <td data-label="BIG TECHS" aria-label="incluso no plano big techs"><span></span></td>
+                </tr>
+                <tr>
+                    <th class="item white-item" scope="row">ACESSO A API</th>
+                    <td data-label="PESSOAL"></td>
+                    <td data-label="PROFISSIONAL" aria-label="incluso no plano profissonal"><span></span></td>
+                    <td data-label="EMPRESARIAL" aria-label="incluso no plano empresarial"><span></span></td>
+                    <td data-label="BIG TECHS" aria-label="incluso no plano big techs"><span></span></td>
+                </tr>
+                <tr>
+                    <th class="item" scope="row">RESTRIÇÃO DE IP</th>
+                    <td data-label="PESSOAL"></td>
+                    <td data-label="PROFISSIONAL"></td>
+                    <td data-label="EMPRESARIAL" aria-label="incluso no plano empresarial"><span></span></td>
+                    <td data-label="BIG TECHS" aria-label="incluso no plano big techs"><span></span></td>
+                </tr>
+                <tr>
+                    <th class="item white-item" scope="row">FEED PERSONALIZADO</th>
+                    <td data-label="PESSOAL"></td>
+                    <td data-label="PROFISSIONAL"></td>
+                    <td data-label="EMPRESARIAL" aria-label="incluso no plano empresarial"><span></span></td>
+                    <td data-label="BIG TECHS" aria-label="incluso no plano big techs"><span></span></td>
+                </tr>
+                <tr>
+                    <th class="item" scope="row">LIMITE DE IMPORTAÇÃO DE DADOS</th>
+                    <td data-label="PESSOAL">ÚLTIMO ANO</td>
+                    <td data-label="PROFISSIONAL">ÚLTIMOS 2 ANOS</td>
+                    <td data-label="EMPRESARIAL">ÚLTIMOS 3 ANOS</td>
+                    <td data-label="BIG TECHS">ÚLTIMOS 3 ANOS</td>
+                </tr>
+                <tr>
+                    <th class="item white-item" scope="row">RETENÇÃO DE DADOS</th>
+                    <td data-label="PESSOAL">TEMPO DE VIDA</td>
+                    <td data-label="PROFISSIONAL">TEMPO DE VIDA</td>
+                    <td data-label="EMPRESARIAL">TEMPO DE VIDA</td>
+                    <td data-label="BIG TECHS">TEMPO DE VIDA</td>
+                </tr>
+                <tr>
+                    <th class="item" scope="row">SUPORTE</th>
+                    <td data-label="PESSOAL">EMAIL</td>
+                    <td data-label="PROFISSIONAL">EMAIL & CHAT</td>
+                    <td data-label="EMPRESARIAL">EMAIL & CHAT</td>
+                    <td data-label="BIG TECHS">EMAIL, CHAT & VOICE</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <div class="content">
+            <div class="logo">
+                <div>
+                    <img src="assets/logo-icone-escuro.png" alt="logo escura da Alfatech">
+                </div>
+                <div class="text">
+                    <h1>AlfaTech</h1>
+                    <p>Soluções em hospedagem</p>
+                </div>
+            </div>
+            <p id="copy"><span>&copy;</span>AlfaTech - Soluções em hospedagem - Todos os direitos reservados</p>
+        </div>
+        <div class="author">
+            <p>Desenvolvido por<a href="https://github.com/GuadalupeMonteiro" target="_blank">Guadalupe Monteiro</a></p>
+        </div>
+    </footer>
+    <script src="js/global.js"></script>
+</body>
+
+</html>

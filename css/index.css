@@ -262,6 +262,10 @@ footer {
         margin: 1rem;
     }
 
+    .services-text {
+        text-align: center;
+    }
+
     thead {
         display: none;
     }

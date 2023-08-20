@@ -129,6 +129,7 @@ nav ul li a:hover::after {
 .services-text p {
     font-size: 1.6rem;
     font-weight: 400;
+    text-align: center;
 }
 
 .services-text p:first-child {
@@ -260,10 +261,6 @@ footer {
     .box {
         width: 100%;
         margin: 1rem;
-    }
-
-    .services-text {
-        text-align: center;
     }
 
     thead {

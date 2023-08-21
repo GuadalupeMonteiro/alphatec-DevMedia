@@ -28,6 +28,10 @@ body {
     width: 100vw;
 }
 
+html, body {
+    scroll-behavior: smooth;
+}
+
 nav {
     padding: 1.5rem 8rem;
     width: 100%;
